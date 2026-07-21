@@ -7,7 +7,6 @@
 [ext_resource type="Texture2D" uid="uid://b36cb45ejg73t" path="res://model2d/Cuadrante 5 Fondo.png" id="5_y820p"]
 [ext_resource type="Texture2D" uid="uid://dujymn2lchf4h" path="res://model2d/Cuadrante 3 Fondo.png" id="6_3gfj7"]
 [ext_resource type="Texture2D" uid="uid://bmq2c7j878cf5" path="res://model2d/Cuadrante 2 Fondo.png" id="7_vt716"]
-[ext_resource type="PackedScene" uid="uid://byergflk88ypk" path="res://Scenes/components/cinta.tscn" id="8_3gfj7"]
 [ext_resource type="PackedScene" uid="uid://c8b6iyoxxg1ap" path="res://model3d/carteles/metal_billboard_advertising_single_sided_free.glb" id="9_vt716"]
 [ext_resource type="Texture2D" uid="uid://beuvxo1nyvyft" path="res://model3d/carteles/cartel.png" id="10_t7loa"]
 
@@ -24,7 +23,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_y8qy7")
 }],
-"loop": true,
+"loop": 1,
 "name": &"default",
 "speed": 5.0
 }]
@@ -42,7 +41,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_cdlmy")
 }],
-"loop": true,
+"loop": 1,
 "name": &"default",
 "speed": 5.0
 }]
@@ -57,7 +56,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_3gfj7")
 }],
-"loop": true,
+"loop": 1,
 "name": &"default",
 "speed": 5.0
 }]
@@ -72,7 +71,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_t7loa")
 }],
-"loop": true,
+"loop": 1,
 "name": &"default",
 "speed": 5.0
 }]
@@ -87,7 +86,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_gc3mq")
 }],
-"loop": true,
+"loop": 1,
 "name": &"default",
 "speed": 5.0
 }]
@@ -102,7 +101,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_mb7r0")
 }],
-"loop": true,
+"loop": 1,
 "name": &"default",
 "speed": 5.0
 }]
@@ -119,255 +118,252 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_f0sfi")
 }],
-"loop": true,
+"loop": 1,
 "name": &"default",
 "speed": 5.0
 }]
 
-[node name="Callejon" type="Node3D"]
+[node name="Callejon" type="Node3D" unique_id=343714289]
 
-[node name="piso" type="Node3D" parent="."]
+[node name="piso" type="Node3D" parent="." unique_id=1623141286]
 
-[node name="Sketchfab_Scene" parent="piso" instance=ExtResource("1_8cf8t")]
+[node name="Sketchfab_Scene" parent="piso" unique_id=2067603668 instance=ExtResource("1_8cf8t")]
 transform = Transform3D(3.131897, 0, 0, 0, 1, 0, 0, 0, 2.6109176, -1.5663843, 0, 4.11129)
 
-[node name="Sketchfab_Scene2" parent="piso" instance=ExtResource("1_8cf8t")]
+[node name="Sketchfab_Scene2" parent="piso" unique_id=942763464 instance=ExtResource("1_8cf8t")]
 transform = Transform3D(3.131897, 0, 0, 0, 1, 0, 0, 0, 2.6109176, 29.855894, 0, 4.11129)
 
-[node name="Sketchfab_Scene3" parent="piso" instance=ExtResource("1_8cf8t")]
+[node name="Sketchfab_Scene3" parent="piso" unique_id=445248067 instance=ExtResource("1_8cf8t")]
 transform = Transform3D(3.131897, 0, 0, 0, 1, 0, 0, 0, 2.6109176, -32.30022, 0, 4.11129)
 
-[node name="Sketchfab_Scene4" parent="piso" instance=ExtResource("1_8cf8t")]
+[node name="Sketchfab_Scene4" parent="piso" unique_id=1927142650 instance=ExtResource("1_8cf8t")]
 transform = Transform3D(3.131897, 0, 0, 0, 1, 0, 0, 0, 2.6109176, 58.334152, 0, 4.11129)
 
-[node name="Sketchfab_Scene5" parent="piso" instance=ExtResource("1_8cf8t")]
+[node name="Sketchfab_Scene5" parent="piso" unique_id=135467258 instance=ExtResource("1_8cf8t")]
 transform = Transform3D(3.131897, 0, 0, 0, 1, 0, 0, 0, 2.6109176, -59.058937, 0, 4.11129)
 
-[node name="Sketchfab_Scene6" parent="piso" instance=ExtResource("1_8cf8t")]
+[node name="Sketchfab_Scene6" parent="piso" unique_id=636882723 instance=ExtResource("1_8cf8t")]
 transform = Transform3D(3.131897, 0, 0, 0, 1, 0, 0, 0, 2.6109176, -87.23315, 0, 4.11129)
 
-[node name="Sketchfab_Scene7" parent="piso" instance=ExtResource("1_8cf8t")]
+[node name="Sketchfab_Scene7" parent="piso" unique_id=1135032794 instance=ExtResource("1_8cf8t")]
 transform = Transform3D(3.131897, 0, 0, 0, 1, 0, 0, 0, 2.6109176, -108.78676, 0, 4.11129)
 
-[node name="Sketchfab_Scene8" parent="piso" instance=ExtResource("1_8cf8t")]
+[node name="Sketchfab_Scene8" parent="piso" unique_id=1728256973 instance=ExtResource("1_8cf8t")]
 transform = Transform3D(3.131897, 0, 0, 0, 1, 0, 0, 0, 2.6109176, -134.06256, 0, 4.11129)
 
-[node name="Sketchfab_Scene9" parent="piso" instance=ExtResource("1_8cf8t")]
+[node name="Sketchfab_Scene9" parent="piso" unique_id=782195347 instance=ExtResource("1_8cf8t")]
 transform = Transform3D(3.1885538, 0, 0, 0, 1, 0, 0, 0, 2.65815, -162.27148, 0, 4.11129)
 
-[node name="Sketchfab_Scene10" parent="piso" instance=ExtResource("1_8cf8t")]
+[node name="Sketchfab_Scene10" parent="piso" unique_id=278799506 instance=ExtResource("1_8cf8t")]
 transform = Transform3D(3.131897, 0, 0, 0, 1, 0, 0, 0, 2.6109176, 83.03553, 0, 4.11129)
 
-[node name="Sketchfab_Scene11" parent="piso" instance=ExtResource("1_8cf8t")]
+[node name="Sketchfab_Scene11" parent="piso" unique_id=765068015 instance=ExtResource("1_8cf8t")]
 transform = Transform3D(3.131897, 0, 0, 0, 1, 0, 0, 0, 2.6109176, 110.92981, 0, 4.11129)
 
-[node name="Sketchfab_Scene12" parent="piso" instance=ExtResource("1_8cf8t")]
+[node name="Sketchfab_Scene12" parent="piso" unique_id=1647328052 instance=ExtResource("1_8cf8t")]
 transform = Transform3D(3.131897, 0, 0, 0, 1, 0, 0, 0, 2.6109176, 136.21585, 0, 4.11129)
 
-[node name="Sketchfab_Scene13" parent="piso" instance=ExtResource("1_8cf8t")]
+[node name="Sketchfab_Scene13" parent="piso" unique_id=2132262944 instance=ExtResource("1_8cf8t")]
 transform = Transform3D(3.131897, 0, 0, 0, 1, 0, 0, 0, 2.6109176, 165.25098, 0, 4.11129)
 
-[node name="Sketchfab_Scene14" parent="piso" instance=ExtResource("1_8cf8t")]
+[node name="Sketchfab_Scene14" parent="piso" unique_id=2138080946 instance=ExtResource("1_8cf8t")]
 transform = Transform3D(3.131897, 0, 0, 0, 1, 0, 0, 0, 2.6109176, 197.24295, 0, 4.11129)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="piso"]
+[node name="StaticBody3D" type="StaticBody3D" parent="piso" unique_id=975259316]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="piso/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="piso/StaticBody3D" unique_id=1834943631]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 4.1893287, 112.89508, -1.6211281, 0.5672302)
 shape = SubResource("BoxShape3D_k3uxn")
 
-[node name="Sketchfab_Scene15" parent="piso" instance=ExtResource("1_8cf8t")]
+[node name="Sketchfab_Scene15" parent="piso" unique_id=586051422 instance=ExtResource("1_8cf8t")]
 transform = Transform3D(3.131897, 0, 0, 0, 1, 0, 0, 0, 2.6109176, 227.8412, 0, 4.11129)
 
-[node name="Sketchfab_Scene16" parent="piso" instance=ExtResource("1_8cf8t")]
+[node name="Sketchfab_Scene16" parent="piso" unique_id=1202251371 instance=ExtResource("1_8cf8t")]
 transform = Transform3D(3.131897, 0, 0, 0, 1, 0, 0, 0, 2.6109176, 260.58832, 0, 4.11129)
 
-[node name="Sketchfab_Scene17" parent="piso" instance=ExtResource("1_8cf8t")]
+[node name="Sketchfab_Scene17" parent="piso" unique_id=1289784560 instance=ExtResource("1_8cf8t")]
 transform = Transform3D(3.131897, 0, 0, 0, 1, 0, 0, 0, 2.6109176, 291.1783, 0, 4.11129)
 
-[node name="Sketchfab_Scene18" parent="piso" instance=ExtResource("1_8cf8t")]
+[node name="Sketchfab_Scene18" parent="piso" unique_id=368072857 instance=ExtResource("1_8cf8t")]
 transform = Transform3D(3.131897, 0, 0, 0, 1, 0, 0, 0, 2.6109176, 320.5656, 0, 4.11129)
 
-[node name="Sketchfab_Scene19" parent="piso" instance=ExtResource("1_8cf8t")]
+[node name="Sketchfab_Scene19" parent="piso" unique_id=1724550009 instance=ExtResource("1_8cf8t")]
 transform = Transform3D(3.131897, 0, 0, 0, 1, 0, 0, 0, 2.6109176, 350.47116, 0, 4.11129)
 
-[node name="Sketchfab_Scene20" parent="piso" instance=ExtResource("1_8cf8t")]
+[node name="Sketchfab_Scene20" parent="piso" unique_id=533305091 instance=ExtResource("1_8cf8t")]
 transform = Transform3D(3.131897, 0, 0, 0, 1, 0, 0, 0, 2.6109176, 380.60333, 0, 4.11129)
 
-[node name="AnimatedSprite3D9" type="AnimatedSprite3D" parent="piso"]
+[node name="AnimatedSprite3D9" type="AnimatedSprite3D" parent="piso" unique_id=899652625]
 transform = Transform3D(-3.25438, 0, -8.7422784e-08, 0, 3.6383033, 0, 2.8450694e-07, 0, -1.0000001, 283.98273, 18.804201, -9.743973)
 texture_filter = 0
 sprite_frames = SubResource("SpriteFrames_y820p")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="piso/AnimatedSprite3D9"]
+[node name="StaticBody3D" type="StaticBody3D" parent="piso/AnimatedSprite3D9" unique_id=1307444249]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="piso/AnimatedSprite3D9/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="piso/AnimatedSprite3D9/StaticBody3D" unique_id=728223422]
 transform = Transform3D(0.9999998, 0, 2.6077034e-08, 0, 0.9999628, 0, -7.4500974e-09, 0, 1, 0.5550003, -0.44281673, 1.4990559)
 shape = SubResource("BoxShape3D_cdlmy")
 
-[node name="Paredes" type="Node3D" parent="."]
+[node name="Paredes" type="Node3D" parent="." unique_id=116178777]
 
-[node name="AnimatedSprite3D2" type="AnimatedSprite3D" parent="Paredes"]
+[node name="AnimatedSprite3D2" type="AnimatedSprite3D" parent="Paredes" unique_id=95512482]
 transform = Transform3D(-0.065345705, 0, 0.9997318, 0, 3.318353, 0, -2.8209257, 0, -0.023158401, -176.68071, 15.448086, 13.923391)
 texture_filter = 0
 sprite_frames = SubResource("SpriteFrames_go2ej")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Paredes/AnimatedSprite3D2"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Paredes/AnimatedSprite3D2" unique_id=250540176]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Paredes/AnimatedSprite3D2/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Paredes/AnimatedSprite3D2/StaticBody3D" unique_id=305152768]
 transform = Transform3D(0.9999999, 0, 2.6077032e-08, 0, 0.9999623, 0, -7.450581e-09, 0, 1, 0.555002, 0.14261055, 1.499054)
 shape = SubResource("BoxShape3D_cdlmy")
 
-[node name="AnimatedSprite3D3" type="AnimatedSprite3D" parent="Paredes"]
+[node name="AnimatedSprite3D3" type="AnimatedSprite3D" parent="Paredes" unique_id=1151254147]
 transform = Transform3D(-3.25438, 0, -8.7422784e-08, 0, 3.6383033, 0, 2.8450694e-07, 0, -1.0000001, -175.94543, 11.453726, -37.55607)
 texture_filter = 0
 sprite_frames = SubResource("SpriteFrames_y820p")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Paredes/AnimatedSprite3D3"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Paredes/AnimatedSprite3D3" unique_id=1468116617]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Paredes/AnimatedSprite3D3/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Paredes/AnimatedSprite3D3/StaticBody3D" unique_id=214541915]
 transform = Transform3D(0.9999998, 0, 2.6077034e-08, 0, 0.9999628, 0, -7.4500974e-09, 0, 1, 0.5550003, -0.44281673, 1.4990559)
 shape = SubResource("BoxShape3D_cdlmy")
 
-[node name="AnimatedSprite3D4" type="AnimatedSprite3D" parent="Paredes"]
+[node name="AnimatedSprite3D4" type="AnimatedSprite3D" parent="Paredes" unique_id=581251973]
 transform = Transform3D(-4.0848713, 0, -8.7422784e-08, 0, 5.7088456, 0, 3.5711082e-07, 0, -1.0000001, -109.41728, -0.17747307, -30.705982)
 texture_filter = 0
 sprite_frames = SubResource("SpriteFrames_vt716")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Paredes/AnimatedSprite3D4"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Paredes/AnimatedSprite3D4" unique_id=368902884]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Paredes/AnimatedSprite3D4/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Paredes/AnimatedSprite3D4/StaticBody3D" unique_id=1493241432]
 transform = Transform3D(0.9999998, 0, 2.6077034e-08, 0, 0.9999628, 0, -7.4500974e-09, 0, 1, 0.5550003, -0.44281673, 1.4990559)
 shape = SubResource("BoxShape3D_cdlmy")
 
-[node name="AnimatedSprite3D5" type="AnimatedSprite3D" parent="Paredes"]
+[node name="AnimatedSprite3D5" type="AnimatedSprite3D" parent="Paredes" unique_id=54984881]
 transform = Transform3D(-4.0848713, 0, -8.7422784e-08, 0, 5.7088456, 0, 3.5711082e-07, 0, -1.0000001, -0.6081848, 22.759119, -9.743973)
 texture_filter = 0
 sprite_frames = SubResource("SpriteFrames_f0sfi")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Paredes/AnimatedSprite3D5"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Paredes/AnimatedSprite3D5" unique_id=1211145970]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Paredes/AnimatedSprite3D5/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Paredes/AnimatedSprite3D5/StaticBody3D" unique_id=321962046]
 transform = Transform3D(0.9999998, 0, 2.6077034e-08, 0, 0.9999628, 0, -7.4500974e-09, 0, 1, 0.5550003, -0.44281673, 1.4990559)
 shape = SubResource("BoxShape3D_cdlmy")
 
-[node name="AnimatedSprite3D6" type="AnimatedSprite3D" parent="Paredes"]
+[node name="AnimatedSprite3D6" type="AnimatedSprite3D" parent="Paredes" unique_id=1373540720]
 transform = Transform3D(4.0848713, 0, -1.7484557e-07, 0, 4.487666, 0, 7.142216e-07, 0, 1.0000001, 76.89586, 19.99706, -9.743973)
 texture_filter = 0
 sprite_frames = SubResource("SpriteFrames_dtvix")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Paredes/AnimatedSprite3D6"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Paredes/AnimatedSprite3D6" unique_id=1280587449]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Paredes/AnimatedSprite3D6/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Paredes/AnimatedSprite3D6/StaticBody3D" unique_id=1538421256]
 transform = Transform3D(0.9999998, 0, 2.6077034e-08, 0, 0.9999628, 0, -7.4500974e-09, 0, 1, 0.5550003, -0.44281673, 1.4990559)
 shape = SubResource("BoxShape3D_cdlmy")
 
-[node name="AnimatedSprite3D7" type="AnimatedSprite3D" parent="Paredes"]
+[node name="AnimatedSprite3D7" type="AnimatedSprite3D" parent="Paredes" unique_id=972186837]
 transform = Transform3D(-4.0848713, 0, -8.7422784e-08, 0, 5.7088456, 0, 3.5711082e-07, 0, -1.0000001, 153.35251, 22.759119, -9.743973)
 texture_filter = 0
 sprite_frames = SubResource("SpriteFrames_oyr6q")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Paredes/AnimatedSprite3D7"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Paredes/AnimatedSprite3D7" unique_id=76413932]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Paredes/AnimatedSprite3D7/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Paredes/AnimatedSprite3D7/StaticBody3D" unique_id=1812349177]
 transform = Transform3D(0.9999998, 0, 2.6077034e-08, 0, 0.9999628, 0, -7.4500974e-09, 0, 1, 0.5550003, -0.44281673, 1.4990559)
 shape = SubResource("BoxShape3D_cdlmy")
 
-[node name="AnimatedSprite3D8" type="AnimatedSprite3D" parent="Paredes"]
+[node name="AnimatedSprite3D8" type="AnimatedSprite3D" parent="Paredes" unique_id=280051553]
 transform = Transform3D(-4.0848713, 0, -8.7422784e-08, 0, 5.7088456, 0, 3.5711082e-07, 0, -1.0000001, 153.35251, 22.759119, -9.743973)
 texture_filter = 0
 sprite_frames = SubResource("SpriteFrames_oyr6q")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Paredes/AnimatedSprite3D8"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Paredes/AnimatedSprite3D8" unique_id=1179265553]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Paredes/AnimatedSprite3D8/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Paredes/AnimatedSprite3D8/StaticBody3D" unique_id=315065983]
 transform = Transform3D(0.9999998, 0, 2.6077034e-08, 0, 0.9999628, 0, -7.4500974e-09, 0, 1, 0.5550003, -0.44281673, 1.4990559)
 shape = SubResource("BoxShape3D_cdlmy")
 
-[node name="AnimatedSprite3D9" type="AnimatedSprite3D" parent="Paredes"]
+[node name="AnimatedSprite3D9" type="AnimatedSprite3D" parent="Paredes" unique_id=1301855002]
 transform = Transform3D(-3.25438, 0, -8.7422784e-08, 0, 3.6383033, 0, 2.8450694e-07, 0, -1.0000001, 223.11372, 18.804201, -9.743973)
 texture_filter = 0
 sprite_frames = SubResource("SpriteFrames_y820p")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Paredes/AnimatedSprite3D9"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Paredes/AnimatedSprite3D9" unique_id=1235887715]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Paredes/AnimatedSprite3D9/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Paredes/AnimatedSprite3D9/StaticBody3D" unique_id=461848841]
 transform = Transform3D(0.9999998, 0, 2.6077034e-08, 0, 0.9999628, 0, -7.4500974e-09, 0, 1, 0.5550003, -0.44281673, 1.4990559)
 shape = SubResource("BoxShape3D_cdlmy")
 
-[node name="AnimatedSprite3D10" type="AnimatedSprite3D" parent="Paredes"]
+[node name="AnimatedSprite3D10" type="AnimatedSprite3D" parent="Paredes" unique_id=385653666]
 transform = Transform3D(-3.25438, 0, -8.7422784e-08, 0, 3.6383033, 0, 2.8450694e-07, 0, -1.0000001, 283.98273, 18.804201, -9.743973)
 texture_filter = 0
 sprite_frames = SubResource("SpriteFrames_y820p")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Paredes/AnimatedSprite3D10"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Paredes/AnimatedSprite3D10" unique_id=193322470]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Paredes/AnimatedSprite3D10/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Paredes/AnimatedSprite3D10/StaticBody3D" unique_id=619757945]
 transform = Transform3D(0.9999998, 0, 2.6077034e-08, 0, 0.9999628, 0, -7.4500974e-09, 0, 1, 0.5550003, -0.44281673, 1.4990559)
 shape = SubResource("BoxShape3D_cdlmy")
 
-[node name="AnimatedSprite3D11" type="AnimatedSprite3D" parent="Paredes"]
+[node name="AnimatedSprite3D11" type="AnimatedSprite3D" parent="Paredes" unique_id=1506631632]
 transform = Transform3D(-4.0848713, 0, -8.7422784e-08, 0, 5.7088456, 0, 3.5711082e-07, 0, -1.0000001, 352.6684, 22.759119, -9.743973)
 texture_filter = 0
 sprite_frames = SubResource("SpriteFrames_vt716")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Paredes/AnimatedSprite3D11"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Paredes/AnimatedSprite3D11" unique_id=512144448]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Paredes/AnimatedSprite3D11/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Paredes/AnimatedSprite3D11/StaticBody3D" unique_id=1050629358]
 transform = Transform3D(0.9999998, 0, 2.6077034e-08, 0, 0.9999628, 0, -7.4500974e-09, 0, 1, 0.5550003, -0.44281673, 1.4990559)
 shape = SubResource("BoxShape3D_cdlmy")
 
-[node name="AnimatedSprite3D12" type="AnimatedSprite3D" parent="Paredes"]
+[node name="AnimatedSprite3D12" type="AnimatedSprite3D" parent="Paredes" unique_id=822967384]
 transform = Transform3D(2.8216822, 0, 0, 0, 3.3183525, 0, 0, 0, 0.99999994, -101.18486, -1.0752106, -10.787062)
 texture_filter = 0
 sprite_frames = SubResource("SpriteFrames_go2ej")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Paredes/AnimatedSprite3D12"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Paredes/AnimatedSprite3D12" unique_id=1328426315]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Paredes/AnimatedSprite3D12/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Paredes/AnimatedSprite3D12/StaticBody3D" unique_id=585662754]
 transform = Transform3D(0.9999999, 0, 2.6077032e-08, 0, 0.9999623, 0, -7.450581e-09, 0, 1, 0.555002, 0.14261055, 1.499054)
 shape = SubResource("BoxShape3D_cdlmy")
 
-[node name="AnimatedSprite3D13" type="AnimatedSprite3D" parent="Paredes"]
+[node name="AnimatedSprite3D13" type="AnimatedSprite3D" parent="Paredes" unique_id=2091481421]
 transform = Transform3D(-4.0848713, 0, -8.7422784e-08, 0, 5.7088456, 0, 3.5711082e-07, 0, -1.0000001, -57.435898, 0.5371189, -62.96202)
 texture_filter = 0
 sprite_frames = SubResource("SpriteFrames_f0sfi")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Paredes/AnimatedSprite3D13"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Paredes/AnimatedSprite3D13" unique_id=139513728]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Paredes/AnimatedSprite3D13/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Paredes/AnimatedSprite3D13/StaticBody3D" unique_id=731131678]
 transform = Transform3D(0.9999998, 0, 2.6077034e-08, 0, 0.9999628, 0, -7.4500974e-09, 0, 1, 0.5550003, -0.44281673, 1.4990559)
 shape = SubResource("BoxShape3D_cdlmy")
 
-[node name="AnimatedSprite3D14" type="AnimatedSprite3D" parent="Paredes"]
+[node name="AnimatedSprite3D14" type="AnimatedSprite3D" parent="Paredes" unique_id=319130697]
 transform = Transform3D(2.8216822, 0, 0, 0, 3.3183525, 0, 0, 0, 0.99999994, -52.746212, 8.289818, -10.787062)
 texture_filter = 0
 sprite_frames = SubResource("SpriteFrames_go2ej")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Paredes/AnimatedSprite3D14"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Paredes/AnimatedSprite3D14" unique_id=2134611864]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Paredes/AnimatedSprite3D14/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Paredes/AnimatedSprite3D14/StaticBody3D" unique_id=1521784317]
 transform = Transform3D(0.9999999, 0, 2.6077032e-08, 0, 0.9999623, 0, -7.450581e-09, 0, 1, 0.555002, 0.14261055, 1.499054)
 shape = SubResource("BoxShape3D_cdlmy")
 
-[node name="AnimatedSprite3D15" type="AnimatedSprite3D" parent="Paredes"]
+[node name="AnimatedSprite3D15" type="AnimatedSprite3D" parent="Paredes" unique_id=109604325]
 transform = Transform3D(2.8216822, 0, 0, 0, 3.3183525, 0, 0, 0, 0.99999994, -150.72963, -1.0752106, -10.787062)
 texture_filter = 0
 sprite_frames = SubResource("SpriteFrames_go2ej")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Paredes/AnimatedSprite3D15"]
+[node name="StaticBody3D" type="StaticBody3D" parent="Paredes/AnimatedSprite3D15" unique_id=1856973228]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Paredes/AnimatedSprite3D15/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Paredes/AnimatedSprite3D15/StaticBody3D" unique_id=738160725]
 transform = Transform3D(0.9999999, 0, 2.6077032e-08, 0, 0.9999623, 0, -7.450581e-09, 0, 1, 0.555002, 0.14261055, 1.499054)
 shape = SubResource("BoxShape3D_cdlmy")
 
-[node name="cinta" parent="." instance=ExtResource("8_3gfj7")]
-transform = Transform3D(0.85770875, 0, 0, 0, 1, 0, 0, 0, 0.53820795, 92.22262, 0.3705387, 3.4734764)
-
-[node name="Sketchfab_Scene" parent="." instance=ExtResource("9_vt716")]
+[node name="Sketchfab_Scene" parent="." unique_id=1984077837 instance=ExtResource("9_vt716")]
 transform = Transform3D(0.87925583, 0, -6.2343693, 0, 6.059593, 0, 5.481414, 0, 1.0000352, -112.4982, -19.769873, -60.955082)
 
-[node name="Label3D" type="Label3D" parent="."]
+[node name="Label3D" type="Label3D" parent="." unique_id=1478821097]
 transform = Transform3D(21.765617, 0, 0.24856675, 0, 22.993464, 0, -3.50655, 0, 1.5428864, -128.46693, 38.991272, -55.247356)
 modulate = Color(0.9135675, 0.35446224, 0.10394629, 1)
 outline_modulate = Color(0.36424398, 0.024449388, 0.31614468, 1)
@@ -379,13 +375,13 @@ font_size = 36
 outline_size = 20
 language = "en_US"
 
-[node name="AnimatedSprite3D15" type="AnimatedSprite3D" parent="."]
+[node name="AnimatedSprite3D15" type="AnimatedSprite3D" parent="." unique_id=1896077845]
 transform = Transform3D(2.8536863, 0, 0.118194446, 0, 2.7501884, 0, -0.3389177, 0, 0.995197, -97.27693, 39.66539, -59.103912)
 texture_filter = 0
 sprite_frames = SubResource("SpriteFrames_gc3mq")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="AnimatedSprite3D15"]
+[node name="StaticBody3D" type="StaticBody3D" parent="AnimatedSprite3D15" unique_id=581202228]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="AnimatedSprite3D15/StaticBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="AnimatedSprite3D15/StaticBody3D" unique_id=263737926]
 transform = Transform3D(0.9999999, 0, 2.6077032e-08, 0, 0.9999623, 0, -7.450581e-09, 0, 1, 0.555002, 0.14261055, 1.499054)
 shape = SubResource("BoxShape3D_cdlmy")

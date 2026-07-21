@@ -1,38 +1,38 @@
 [gd_scene format=3 uid="uid://580t0os1faer"]
 
-[ext_resource type="PackedScene" uid="uid://2p30tj8m17vf" path="res://Scenes/character.tscn" id="1_ebknw"]
-[ext_resource type="PackedScene" uid="uid://4hdepvo6kgm1" path="res://Scenes/ambiente.tscn" id="1_v1kvm"]
-[ext_resource type="PackedScene" uid="uid://b6plbpna1dc85" path="res://Scenes/portal_yanahuara.tscn" id="3_8sr06"]
-[ext_resource type="PackedScene" uid="uid://delp20ib3k663" path="res://Scenes/callejon.tscn" id="4_c7ene"]
-[ext_resource type="Script" uid="uid://dbcothf1gjld2" path="res://Scenes/area_3d.gd" id="5_fjgm8"]
+[ext_resource type="PackedScene" uid="uid://2p30tj8m17vf" path="res://Scenes/characters/character.tscn" id="1_ebknw"]
+[ext_resource type="PackedScene" uid="uid://4hdepvo6kgm1" path="res://Scenes/corredor/ambiente.tscn" id="1_v1kvm"]
+[ext_resource type="PackedScene" uid="uid://b6plbpna1dc85" path="res://Scenes/corredor/portal_yanahuara.tscn" id="3_8sr06"]
+[ext_resource type="PackedScene" uid="uid://delp20ib3k663" path="res://Scenes/corredor/callejon.tscn" id="4_c7ene"]
+[ext_resource type="Script" uid="uid://dbcothf1gjld2" path="res://Scenes/script_scenes/area_3d.gd" id="5_fjgm8"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_jwwyr"]
 size = Vector3(0.99952346, 27.04628, 31.636292)
 
-[node name="Node3D" type="Node3D"]
+[node name="Node3D" type="Node3D" unique_id=1131699580]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.073641, 0)
 
-[node name="Ambiente" parent="." instance=ExtResource("1_v1kvm")]
+[node name="Ambiente" parent="." unique_id=2124356604 instance=ExtResource("1_v1kvm")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -51.311752, -238.92007)
 
-[node name="CharacterBody3D" parent="." instance=ExtResource("1_ebknw")]
+[node name="CharacterBody3D" parent="." unique_id=512937666 instance=ExtResource("1_ebknw")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 23.029118, 0)
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=2137193361]
 transform = Transform3D(1, 0, 0, 0, -0.98713624, 0.15988119, 0, -0.15988119, -0.98713624, 0, 36.483902, 0)
 shadow_enabled = true
 
-[node name="PortalYanahuara" parent="." instance=ExtResource("3_8sr06")]
+[node name="PortalYanahuara" parent="." unique_id=580742895 instance=ExtResource("3_8sr06")]
 transform = Transform3D(0.014240356, 0.00017541218, -0.9998986, -0.012531064, 0.99992156, -3.0487279e-06, 0.99982023, 0.012529838, 0.014241425, 681.887, -1.8142433, 0)
 
-[node name="Callejon" parent="." instance=ExtResource("4_c7ene")]
+[node name="Callejon" parent="." unique_id=815140960 instance=ExtResource("4_c7ene")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 156.08469, 0, 0)
 
-[node name="Area3D" type="Area3D" parent="."]
+[node name="Area3D" type="Area3D" parent="." unique_id=833914946]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 558.8688, 0, 0)
 script = ExtResource("5_fjgm8")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1443341537]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0067443848, 13.008491, 4.042328)
 shape = SubResource("BoxShape3D_jwwyr")
 
