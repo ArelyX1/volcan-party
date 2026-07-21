@@ -5,25 +5,30 @@
 [ext_resource type="PackedScene" uid="uid://b6plbpna1dc85" path="res://Scenes/corredor/portal_yanahuara.tscn" id="3_8sr06"]
 [ext_resource type="PackedScene" uid="uid://delp20ib3k663" path="res://Scenes/corredor/callejon.tscn" id="4_c7ene"]
 [ext_resource type="Script" uid="uid://dbcothf1gjld2" path="res://Scenes/script_scenes/area_3d.gd" id="5_fjgm8"]
+[ext_resource type="Script" uid="uid://ckbu2j015uyvo" path="res://minigames/script_minigames/area_3d_minigame_target.gd" id="6_jwwyr"]
+[ext_resource type="PackedScene" uid="uid://ch8125mru8t3y" path="res://minigames/osugame/osu_minigame.tscn" id="7_4omof"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_jwwyr"]
 size = Vector3(0.99952346, 27.04628, 31.636292)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0q7fg"]
+size = Vector3(1, 1, 0.9273071)
 
 [node name="Node3D" type="Node3D" unique_id=1131699580]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.073641, 0)
 
 [node name="Ambiente" parent="." unique_id=2124356604 instance=ExtResource("1_v1kvm")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -51.311752, -238.92007)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 398.80777, -51.311752, -238.92007)
 
 [node name="CharacterBody3D" parent="." unique_id=512937666 instance=ExtResource("1_ebknw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 23.029118, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -102.874405, 23.029118, 0)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=2137193361]
 transform = Transform3D(1, 0, 0, 0, -0.98713624, 0.15988119, 0, -0.15988119, -0.98713624, 0, 36.483902, 0)
 shadow_enabled = true
 
 [node name="PortalYanahuara" parent="." unique_id=580742895 instance=ExtResource("3_8sr06")]
-transform = Transform3D(0.014240356, 0.00017541218, -0.9998986, -0.012531064, 0.99992156, -3.0487279e-06, 0.99982023, 0.012529838, 0.014241425, 681.887, -1.8142433, 0)
+transform = Transform3D(0.014240356, 0.00017541218, -0.9998986, -0.012531064, 0.99992156, -3.0487279e-06, 0.99982023, 0.012529838, 0.014241425, -300.614, 1.2, -92.886)
 
 [node name="Callejon" parent="." unique_id=815140960 instance=ExtResource("4_c7ene")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 156.08469, 0, 0)
@@ -33,7 +38,22 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 558.8688, 0, 0)
 script = ExtResource("5_fjgm8")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1443341537]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0067443848, 13.008491, 4.042328)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -600.30835, 13.00849, 4.1232815)
 shape = SubResource("BoxShape3D_jwwyr")
 
+[node name="Callejon2" parent="." unique_id=343714289 instance=ExtResource("4_c7ene")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 702.12134, 0, 0)
+
+[node name="Area3D2" type="Area3D" parent="." unique_id=1601160005]
+transform = Transform3D(19.547009, 0, 0, 0, 13.745663, 0, 0, 0, 19.669535, 180.53052, 11.603149, 0)
+script = ExtResource("6_jwwyr")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D2" unique_id=1762027421]
+transform = Transform3D(1, 0, 0, 0, 1.0000002, 0, 0, 0, 1, -1.1913671, 0, 0.08711679)
+shape = SubResource("BoxShape3D_0q7fg")
+
+[node name="OsuMinigame" parent="." unique_id=883087989 instance=ExtResource("7_4omof")]
+
 [connection signal="body_entered" from="Area3D" to="CharacterBody3D" method="_on_area_3d_body_entered"]
+[connection signal="body_entered" from="Area3D2" to="CharacterBody3D" method="_character_entered"]
+[connection signal="body_entered" from="Area3D2" to="Area3D2" method="_on_body_entered"]

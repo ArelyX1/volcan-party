@@ -7,86 +7,98 @@
 [ext_resource type="PackedScene" uid="uid://52icdsngn5dq" path="res://model3d/Semaforo.glb" id="5_gipix"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_gipix"]
-size = Vector3(199.63846, 1, 247.3571)
+size = Vector3(805.30554, 1, 581.3725)
 
-[node name="PortalYanahuara" type="Node3D"]
+[node name="PortalYanahuara" type="Node3D" unique_id=808178575]
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1912266508]
 
-[node name="plaza" parent="MeshInstance3D" instance=ExtResource("1_2h0qn")]
+[node name="plaza" parent="MeshInstance3D" unique_id=280617635 instance=ExtResource("1_2h0qn")]
 transform = Transform3D(3.8208594, 0, 0, 0, 1, 0, 0, 0, 2.3718932, 0, 0, 0)
 
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+[node name="plaza2" parent="MeshInstance3D" unique_id=534545886 instance=ExtResource("1_2h0qn")]
+transform = Transform3D(0.055397704, 0, -2.371644, 0, 1, 0, 3.8204577, 0, 0.034389496, 176.49174, 0, -164.11382)
+
+[node name="plaza3" parent="MeshInstance3D" unique_id=871682703 instance=ExtResource("1_2h0qn")]
+transform = Transform3D(-0.0859756, 0, 2.3712928, 0, 1, 0, -3.819892, 0, -0.05337149, 176.49174, 0, 171.3144)
+
+[node name="plaza4" parent="MeshInstance3D" unique_id=1304227283 instance=ExtResource("1_2h0qn")]
+transform = Transform3D(-3.8207345, 0, -0.019185983, 0, 1, 0, 0.030906506, 0, -2.3718154, 333.88605, 0, 0)
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="." unique_id=1482598653]
 transform = Transform3D(18.83055, 0, 0, 0, 27.629536, 0, 0, 0, 28.620827, -5.1259594, 3.995819, 44.010128)
 
-[node name="Sketchfab_Scene" parent="MeshInstance3D2" instance=ExtResource("2_wk1or")]
+[node name="Sketchfab_Scene" parent="MeshInstance3D2" unique_id=757287413 instance=ExtResource("2_wk1or")]
 transform = Transform3D(1, 0, 0, 0, 0.99999976, 0, 0, 0, 1.0000004, -0.7903044, -0.14025967, -0.13341999)
 
-[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="." unique_id=2048541245]
 
-[node name="Sketchfab_Scene" parent="MeshInstance3D3" instance=ExtResource("3_gipix")]
+[node name="Sketchfab_Scene" parent="MeshInstance3D3" unique_id=599513416 instance=ExtResource("3_gipix")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 2.0768256, -64.88478, 0.4171257, 0)
 
-[node name="Sketchfab_Scene2" parent="MeshInstance3D3" instance=ExtResource("3_gipix")]
+[node name="Sketchfab_Scene2" parent="MeshInstance3D3" unique_id=392802637 instance=ExtResource("3_gipix")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.6789783, -65.535736, 0.40724373, -22.110313)
 
-[node name="Sketchfab_Scene3" parent="MeshInstance3D3" instance=ExtResource("3_gipix")]
+[node name="Sketchfab_Scene3" parent="MeshInstance3D3" unique_id=1450807792 instance=ExtResource("3_gipix")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.6789783, -65.535736, 0.40724373, -41.28428)
 
-[node name="Sketchfab_Scene4" parent="MeshInstance3D3" instance=ExtResource("3_gipix")]
+[node name="Sketchfab_Scene4" parent="MeshInstance3D3" unique_id=2093329549 instance=ExtResource("3_gipix")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.6789783, -65.535736, 0.40724373, -60.728317)
 
-[node name="Sketchfab_Scene5" parent="MeshInstance3D3" instance=ExtResource("3_gipix")]
+[node name="Sketchfab_Scene5" parent="MeshInstance3D3" unique_id=885271112 instance=ExtResource("3_gipix")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.6789783, -65.535736, 0.40724373, -80.706085)
 
-[node name="Sketchfab_Scene6" parent="MeshInstance3D3" instance=ExtResource("3_gipix")]
+[node name="Sketchfab_Scene6" parent="MeshInstance3D3" unique_id=1650009815 instance=ExtResource("3_gipix")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.6789783, -65.535736, 0.40724373, -100.70266)
 
-[node name="Sketchfab_Scene7" parent="MeshInstance3D3" instance=ExtResource("3_gipix")]
+[node name="Sketchfab_Scene7" parent="MeshInstance3D3" unique_id=150697700 instance=ExtResource("3_gipix")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.6789783, -65.535736, 0.40724373, -119.7261)
 
-[node name="Sketchfab_Scene8" parent="MeshInstance3D3" instance=ExtResource("3_gipix")]
+[node name="Sketchfab_Scene8" parent="MeshInstance3D3" unique_id=251280243 instance=ExtResource("3_gipix")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 2.0768256, -64.88478, 0.4171257, 24.063671)
 
-[node name="Sketchfab_Scene9" parent="MeshInstance3D3" instance=ExtResource("3_gipix")]
+[node name="Sketchfab_Scene9" parent="MeshInstance3D3" unique_id=1891113094 instance=ExtResource("3_gipix")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 2.0768256, -64.88478, 0.4171257, 47.985115)
 
-[node name="Sketchfab_Scene10" parent="MeshInstance3D3" instance=ExtResource("3_gipix")]
+[node name="Sketchfab_Scene10" parent="MeshInstance3D3" unique_id=1324541123 instance=ExtResource("3_gipix")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 2.0768256, -64.88478, 0.4171257, 71.76626)
 
-[node name="Sketchfab_Scene11" parent="MeshInstance3D3" instance=ExtResource("3_gipix")]
+[node name="Sketchfab_Scene11" parent="MeshInstance3D3" unique_id=79118778 instance=ExtResource("3_gipix")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 2.0768256, -64.88478, 0.4171257, 95.79286)
 
-[node name="Sketchfab_Scene10" parent="." instance=ExtResource("3_gipix")]
+[node name="Sketchfab_Scene10" parent="." unique_id=2018187516 instance=ExtResource("3_gipix")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 2.0768256, -64.88478, 0.4171257, 116.30028)
 
-[node name="MeshInstance3D4" type="MeshInstance3D" parent="."]
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="." unique_id=970512342]
 
-[node name="Sketchfab_Scene" parent="MeshInstance3D4" instance=ExtResource("3_gipix")]
-transform = Transform3D(5.7663403, 0, 0, 0, 1, 0, 0, 0, 23.976025, -129.99649, 9.231157, 0)
+[node name="Sketchfab_Scene" parent="MeshInstance3D4" unique_id=676088770 instance=ExtResource("3_gipix")]
+transform = Transform3D(5.7663403, 0, 0, 0, 1, 0, 0, 0, 23.976025, -129.99649, 9.231157, 137.37643)
 
-[node name="MeshInstance3D5" type="MeshInstance3D" parent="."]
+[node name="Sketchfab_Scene2" parent="MeshInstance3D4" unique_id=1807181963 instance=ExtResource("3_gipix")]
+transform = Transform3D(5.7663403, 0, 0, 0, 1, 0, 0, 0, 23.976025, -129.99649, 9.231157, -138.93857)
 
-[node name="portalYana" parent="MeshInstance3D5" instance=ExtResource("4_mci54")]
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="." unique_id=1345894240]
+
+[node name="portalYana" parent="MeshInstance3D5" unique_id=299510232 instance=ExtResource("4_mci54")]
 transform = Transform3D(-0.19016548, 0, -4.6683583, 0, 7.239215, 0, 9.522949, 0, -0.093223296, -155.78369, 11.7332115, 43.17707)
 
-[node name="portalYana2" parent="MeshInstance3D5" instance=ExtResource("4_mci54")]
+[node name="portalYana2" parent="MeshInstance3D5" unique_id=923909595 instance=ExtResource("4_mci54")]
 transform = Transform3D(-0.19016548, 0, -4.6683583, 0, 7.239215, 0, 9.522949, 0, -0.093223296, -155.78369, 11.7332115, -30.159584)
 
-[node name="portalYana3" parent="MeshInstance3D5" instance=ExtResource("4_mci54")]
+[node name="portalYana3" parent="MeshInstance3D5" unique_id=2010795003 instance=ExtResource("4_mci54")]
 transform = Transform3D(-0.19016548, 0, -4.6683583, 0, 7.239215, 0, 9.522949, 0, -0.093223296, -155.78369, 11.7332115, -102.23662)
 
-[node name="portalYana4" parent="MeshInstance3D5" instance=ExtResource("4_mci54")]
+[node name="portalYana4" parent="MeshInstance3D5" unique_id=1625163904 instance=ExtResource("4_mci54")]
 transform = Transform3D(-0.19016548, 0, -4.6683583, 0, 7.239215, 0, 9.522949, 0, -0.093223296, -155.78369, 11.7332115, 116.27216)
 
-[node name="portalYana" parent="." instance=ExtResource("4_mci54")]
+[node name="portalYana" parent="." unique_id=2129597889 instance=ExtResource("4_mci54")]
 transform = Transform3D(-0.19016548, 0, -4.6683583, 0, 7.239215, 0, 9.522949, 0, -0.093223296, -155.78369, 11.7332115, -177.37708)
 
-[node name="Semaforo" parent="." instance=ExtResource("5_gipix")]
+[node name="Semaforo" parent="." unique_id=1727031705 instance=ExtResource("5_gipix")]
 transform = Transform3D(1.0255704, 0, -0.81714314, 0, 1.2921687, 0, 0.47703335, 0, 1.7567701, -63.030052, 24.586754, -28.858597)
 
-[node name="StaticBody3D" type="StaticBody3D" parent="."]
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1976762168]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.58171, 0, -3.0059128)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=738500781]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 73.81163, 0, 44.424736)
 shape = SubResource("BoxShape3D_gipix")

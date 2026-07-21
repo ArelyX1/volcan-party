@@ -11,7 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://beuvxo1nyvyft" path="res://model3d/carteles/cartel.png" id="10_t7loa"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_k3uxn"]
-size = Vector3(582.9498, 3.1009216, 19.279846)
+size = Vector3(663.808, 3.1009216, 19.279846)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_y8qy7"]
 atlas = ExtResource("3_go2ej")
@@ -172,7 +172,7 @@ transform = Transform3D(3.131897, 0, 0, 0, 1, 0, 0, 0, 2.6109176, 197.24295, 0, 
 [node name="StaticBody3D" type="StaticBody3D" parent="piso" unique_id=975259316]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="piso/StaticBody3D" unique_id=1834943631]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 4.1893287, 112.89508, -1.6211281, 0.5672302)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 4.1893287, 72.466, -1.6211281, 0.5672302)
 shape = SubResource("BoxShape3D_k3uxn")
 
 [node name="Sketchfab_Scene15" parent="piso" unique_id=586051422 instance=ExtResource("1_8cf8t")]
@@ -204,10 +204,16 @@ sprite_frames = SubResource("SpriteFrames_y820p")
 transform = Transform3D(0.9999998, 0, 2.6077034e-08, 0, 0.9999628, 0, -7.4500974e-09, 0, 1, 0.5550003, -0.44281673, 1.4990559)
 shape = SubResource("BoxShape3D_cdlmy")
 
+[node name="Sketchfab_Scene21" parent="piso" unique_id=1807181963 instance=ExtResource("1_8cf8t")]
+transform = Transform3D(3.131897, 0, 0, 0, 1, 0, 0, 0, 2.6109176, -189.57742, 0, 4.11129)
+
+[node name="Sketchfab_Scene22" parent="piso" unique_id=1101733570 instance=ExtResource("1_8cf8t")]
+transform = Transform3D(3.131897, 0, 0, 0, 1, 0, 0, 0, 2.6109176, -219.85179, 0, 4.11129)
+
 [node name="Paredes" type="Node3D" parent="." unique_id=116178777]
 
 [node name="AnimatedSprite3D2" type="AnimatedSprite3D" parent="Paredes" unique_id=95512482]
-transform = Transform3D(-0.065345705, 0, 0.9997318, 0, 3.318353, 0, -2.8209257, 0, -0.023158401, -176.68071, 15.448086, 13.923391)
+transform = Transform3D(-0.065345705, 0, 0.9997318, 0, 3.318353, 0, -2.8209257, 0, -0.023158401, -176.68071, 15.448086, 493.3996)
 texture_filter = 0
 sprite_frames = SubResource("SpriteFrames_go2ej")
 
