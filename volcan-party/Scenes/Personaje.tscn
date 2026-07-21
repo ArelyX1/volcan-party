@@ -1,0 +1,74 @@
+[gd_scene format=3 uid="uid://b1lla8h7b1euw"]
+
+[ext_resource type="Script" uid="uid://di66da7qdu727" path="res://Scripts/personaje.gd" id="1_h6c8c"]
+[ext_resource type="Texture2D" uid="uid://bbvxpagpem2hs" path="res://Scenes/Walk Sprite template.png" id="1_t6wr4"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h6c8c"]
+atlas = ExtResource("1_t6wr4")
+region = Rect2(599, 152, 1600, 1800)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ith2g"]
+atlas = ExtResource("1_t6wr4")
+region = Rect2(599, 152, 1600, 1800)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5ss6n"]
+atlas = ExtResource("1_t6wr4")
+region = Rect2(2199, 152, 1600, 1800)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7vwnh"]
+atlas = ExtResource("1_t6wr4")
+region = Rect2(3799, 152, 1600, 1800)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t1ee5"]
+atlas = ExtResource("1_t6wr4")
+region = Rect2(5399, 152, 1600, 1800)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_sin02"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h6c8c")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ith2g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5ss6n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7vwnh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t1ee5")
+}],
+"loop": true,
+"name": &"walk2",
+"speed": 5.0
+}]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_h6c8c"]
+size = Vector3(13.607544, 16.188683, 1)
+
+[node name="CharacterBody3D" type="CharacterBody3D"]
+script = ExtResource("1_h6c8c")
+
+[node name="AnimatedSprite3D" type="AnimatedSprite3D" parent="."]
+sprite_frames = SubResource("SpriteFrames_sin02")
+animation = &"walk2"
+
+[node name="cameraPivot" type="Node3D" parent="."]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 0.9321913, 0.3619663, 0, -0.3619663, 0.9321913, 0, 0, 0)
+
+[node name="Camera3D" type="Camera3D" parent="cameraPivot"]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 0.99545795, -0.09520285, 0, 0.09520283, 0.99545795, 0, 4.188305, 34.369568)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.27996826, -0.77170944, 0)
+shape = SubResource("BoxShape3D_h6c8c")

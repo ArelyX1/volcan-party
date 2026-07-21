@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://4hdepvo6kgm1"]
+
+[ext_resource type="Texture2D" uid="uid://dpjc20tg4ajc0" path="res://model3d/Semaforo_Metal024_4K_Color.jpg" id="1_2ylub"]
+[ext_resource type="PackedScene" uid="uid://dk4duc6tddhdg" path="res://model3d/BULIDING_CYBER.glb" id="1_chq8o"]
+[ext_resource type="PackedScene" uid="uid://cvm1vlkxw6dtr" path="res://model3d/lowpoly_cyberpunk_buildedificio_cyberpunk.glb" id="2_3umbc"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dxupj"]
+albedo_texture = ExtResource("1_2ylub")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_0ve3i"]
+
+[node name="Ambiente" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(393.80762, 0, 0, 0, 1, 0, 0, 0, 141.7936, 1.2365723, 1.6958008, -29.503998)
+material_override = SubResource("StandardMaterial3D_dxupj")
+mesh = SubResource("PlaneMesh_0ve3i")
+metadata/_edit_group_ = true
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(26.626768, 0, 0, 0, 26.202478, 0, 0, 0, 25.26497, -261.73874, 4.291977, -79.88507)
+
+[node name="BULIDING_CYBER" parent="MeshInstance3D2" instance=ExtResource("1_chq8o")]
+transform = Transform3D(0.9999998, 0, 0, 0, 1.0000005, 0, 0, 0, 1, 0.25152016, 2.187056, 0)
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+transform = Transform3D(25.171106, 0, 8.239226, 0, 26.202482, 0, -8.683327, 0, 23.883759, -200.14282, 4.291977, -104.82398)
+
+[node name="BULIDING_CYBER" parent="MeshInstance3D3" instance=ExtResource("1_chq8o")]
+transform = Transform3D(0.9999999, 0, 2.9802322e-08, 0, 1.0000002, 0, 2.9802322e-08, 0, 0.99999994, -0.042294025, 2.1870553, -0.6222029)
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="."]
+transform = Transform3D(26.626768, 0, 0, 0, 26.202478, 0, 0, 0, 25.26497, -164.69333, 4.291977, -165.81816)
+
+[node name="BULIDING_CYBER" parent="MeshInstance3D4" instance=ExtResource("1_chq8o")]
+transform = Transform3D(0.9999998, 0, 0, 0, 1.0000005, 0, 0, 0, 1, 0.55161285, 2.187056, 0)
+
+[node name="Sketchfab_Scene" parent="." instance=ExtResource("2_3umbc")]
+transform = Transform3D(13.619495, 0, 6.139616, 0, 17.341864, 0, -7.8610015, 0, 10.637127, 304.90436, 66.86867, -155.6303)

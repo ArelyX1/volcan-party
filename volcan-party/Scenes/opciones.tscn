@@ -1,0 +1,80 @@
+[gd_scene format=3 uid="uid://l7qsjkj86jks"]
+
+[ext_resource type="Script" uid="uid://dcco5bx00itkv" path="res://Scripts/opciones.gd" id="1_vck7s"]
+[ext_resource type="FontFile" uid="uid://cq2y4rgww3m58" path="res://Fonts/One Slice.otf" id="2_o14iw"]
+
+[sub_resource type="FontVariation" id="FontVariation_3hjeq"]
+base_font = ExtResource("2_o14iw")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vck7s"]
+bg_color = Color(0.18039216, 0.18039216, 0.18039216, 0)
+
+[sub_resource type="FontVariation" id="FontVariation_o14iw"]
+base_font = ExtResource("2_o14iw")
+
+[node name="Opciones" type="Node2D"]
+script = ExtResource("1_vck7s")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+clip_contents = true
+layout_direction = 1
+offset_right = 1153.0
+offset_bottom = 646.0
+color = Color(0.14406255, 0.14406255, 0.14406255, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -193.5
+offset_top = 85.0
+offset_right = 153.5
+offset_bottom = 150.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Regresar" type="Button" parent="ColorRect/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = SubResource("FontVariation_3hjeq")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_vck7s")
+text = "REGRESAR"
+
+[node name="Titulo" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 423.0
+offset_top = 134.0
+offset_right = 700.0
+offset_bottom = 225.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = SubResource("FontVariation_o14iw")
+theme_override_font_sizes/font_size = 86
+text = "OPCIONES"
+
+[node name="TituloVolumen" type="Label" parent="."]
+offset_left = 243.0
+offset_top = 297.0
+offset_right = 517.0
+offset_bottom = 339.0
+theme_override_font_sizes/font_size = 30
+text = "Volumen de fondo:"
+
+[node name="MasterVolume" type="HSlider" parent="."]
+offset_left = 557.0
+offset_top = 305.0
+offset_right = 917.0
+offset_bottom = 338.0
+max_value = 0.4
+step = 0.01
+value = 0.2
+
+[connection signal="pressed" from="ColorRect/VBoxContainer/Regresar" to="." method="_on_regresar_pressed"]
+[connection signal="value_changed" from="MasterVolume" to="." method="_on_master_volume_value_changed"]

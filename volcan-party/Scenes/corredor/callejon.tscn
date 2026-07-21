@@ -1,0 +1,391 @@
+[gd_scene format=3 uid="uid://delp20ib3k663"]
+
+[ext_resource type="PackedScene" uid="uid://cm2qmoked1b34" path="res://model3d/pavimento_pompeya_op.glb" id="1_8cf8t"]
+[ext_resource type="Texture2D" uid="uid://c1mova3uudfyw" path="res://model2d/Cuadrante 6 Fondo.png" id="2_k3uxn"]
+[ext_resource type="Texture2D" uid="uid://qc10npq44wb5" path="res://model2d/Cuadrante 1 Fondo.png" id="3_go2ej"]
+[ext_resource type="Texture2D" uid="uid://b30g6ssfyv2aa" path="res://model2d/Cuadrante 4 Fondo.png" id="4_tdong"]
+[ext_resource type="Texture2D" uid="uid://b36cb45ejg73t" path="res://model2d/Cuadrante 5 Fondo.png" id="5_y820p"]
+[ext_resource type="Texture2D" uid="uid://dujymn2lchf4h" path="res://model2d/Cuadrante 3 Fondo.png" id="6_3gfj7"]
+[ext_resource type="Texture2D" uid="uid://bmq2c7j878cf5" path="res://model2d/Cuadrante 2 Fondo.png" id="7_vt716"]
+[ext_resource type="PackedScene" uid="uid://byergflk88ypk" path="res://Scenes/components/cinta.tscn" id="8_3gfj7"]
+[ext_resource type="PackedScene" uid="uid://c8b6iyoxxg1ap" path="res://model3d/carteles/metal_billboard_advertising_single_sided_free.glb" id="9_vt716"]
+[ext_resource type="Texture2D" uid="uid://beuvxo1nyvyft" path="res://model3d/carteles/cartel.png" id="10_t7loa"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_k3uxn"]
+size = Vector3(582.9498, 3.1009216, 19.279846)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y8qy7"]
+atlas = ExtResource("3_go2ej")
+region = Rect2(0, 71, 1920, 1009)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_y820p"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y8qy7")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_cdlmy"]
+size = Vector3(19.622803, 9.918945, 4.4959717)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cdlmy"]
+atlas = ExtResource("2_k3uxn")
+region = Rect2(0, 71, 1920, 1009)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_go2ej"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cdlmy")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3gfj7"]
+atlas = ExtResource("4_tdong")
+region = Rect2(0, 71, 1920, 1009)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vt716"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3gfj7")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t7loa"]
+atlas = ExtResource("5_y820p")
+region = Rect2(0, 71, 1920, 1009)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_f0sfi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t7loa")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gc3mq"]
+atlas = ExtResource("6_3gfj7")
+region = Rect2(0, 71, 1920, 1009)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dtvix"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gc3mq")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mb7r0"]
+atlas = ExtResource("7_vt716")
+region = Rect2(0, 71, 1920, 1009)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_oyr6q"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mb7r0")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="FontVariation" id="FontVariation_vt716"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f0sfi"]
+atlas = ExtResource("10_t7loa")
+region = Rect2(0, 0, 1169, 748)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gc3mq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f0sfi")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Callejon" type="Node3D"]
+
+[node name="piso" type="Node3D" parent="."]
+
+[node name="Sketchfab_Scene" parent="piso" instance=ExtResource("1_8cf8t")]
+transform = Transform3D(3.131897, 0, 0, 0, 1, 0, 0, 0, 2.6109176, -1.5663843, 0, 4.11129)
+
+[node name="Sketchfab_Scene2" parent="piso" instance=ExtResource("1_8cf8t")]
+transform = Transform3D(3.131897, 0, 0, 0, 1, 0, 0, 0, 2.6109176, 29.855894, 0, 4.11129)
+
+[node name="Sketchfab_Scene3" parent="piso" instance=ExtResource("1_8cf8t")]
+transform = Transform3D(3.131897, 0, 0, 0, 1, 0, 0, 0, 2.6109176, -32.30022, 0, 4.11129)
+
+[node name="Sketchfab_Scene4" parent="piso" instance=ExtResource("1_8cf8t")]
+transform = Transform3D(3.131897, 0, 0, 0, 1, 0, 0, 0, 2.6109176, 58.334152, 0, 4.11129)
+
+[node name="Sketchfab_Scene5" parent="piso" instance=ExtResource("1_8cf8t")]
+transform = Transform3D(3.131897, 0, 0, 0, 1, 0, 0, 0, 2.6109176, -59.058937, 0, 4.11129)
+
+[node name="Sketchfab_Scene6" parent="piso" instance=ExtResource("1_8cf8t")]
+transform = Transform3D(3.131897, 0, 0, 0, 1, 0, 0, 0, 2.6109176, -87.23315, 0, 4.11129)
+
+[node name="Sketchfab_Scene7" parent="piso" instance=ExtResource("1_8cf8t")]
+transform = Transform3D(3.131897, 0, 0, 0, 1, 0, 0, 0, 2.6109176, -108.78676, 0, 4.11129)
+
+[node name="Sketchfab_Scene8" parent="piso" instance=ExtResource("1_8cf8t")]
+transform = Transform3D(3.131897, 0, 0, 0, 1, 0, 0, 0, 2.6109176, -134.06256, 0, 4.11129)
+
+[node name="Sketchfab_Scene9" parent="piso" instance=ExtResource("1_8cf8t")]
+transform = Transform3D(3.1885538, 0, 0, 0, 1, 0, 0, 0, 2.65815, -162.27148, 0, 4.11129)
+
+[node name="Sketchfab_Scene10" parent="piso" instance=ExtResource("1_8cf8t")]
+transform = Transform3D(3.131897, 0, 0, 0, 1, 0, 0, 0, 2.6109176, 83.03553, 0, 4.11129)
+
+[node name="Sketchfab_Scene11" parent="piso" instance=ExtResource("1_8cf8t")]
+transform = Transform3D(3.131897, 0, 0, 0, 1, 0, 0, 0, 2.6109176, 110.92981, 0, 4.11129)
+
+[node name="Sketchfab_Scene12" parent="piso" instance=ExtResource("1_8cf8t")]
+transform = Transform3D(3.131897, 0, 0, 0, 1, 0, 0, 0, 2.6109176, 136.21585, 0, 4.11129)
+
+[node name="Sketchfab_Scene13" parent="piso" instance=ExtResource("1_8cf8t")]
+transform = Transform3D(3.131897, 0, 0, 0, 1, 0, 0, 0, 2.6109176, 165.25098, 0, 4.11129)
+
+[node name="Sketchfab_Scene14" parent="piso" instance=ExtResource("1_8cf8t")]
+transform = Transform3D(3.131897, 0, 0, 0, 1, 0, 0, 0, 2.6109176, 197.24295, 0, 4.11129)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="piso"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="piso/StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 4.1893287, 112.89508, -1.6211281, 0.5672302)
+shape = SubResource("BoxShape3D_k3uxn")
+
+[node name="Sketchfab_Scene15" parent="piso" instance=ExtResource("1_8cf8t")]
+transform = Transform3D(3.131897, 0, 0, 0, 1, 0, 0, 0, 2.6109176, 227.8412, 0, 4.11129)
+
+[node name="Sketchfab_Scene16" parent="piso" instance=ExtResource("1_8cf8t")]
+transform = Transform3D(3.131897, 0, 0, 0, 1, 0, 0, 0, 2.6109176, 260.58832, 0, 4.11129)
+
+[node name="Sketchfab_Scene17" parent="piso" instance=ExtResource("1_8cf8t")]
+transform = Transform3D(3.131897, 0, 0, 0, 1, 0, 0, 0, 2.6109176, 291.1783, 0, 4.11129)
+
+[node name="Sketchfab_Scene18" parent="piso" instance=ExtResource("1_8cf8t")]
+transform = Transform3D(3.131897, 0, 0, 0, 1, 0, 0, 0, 2.6109176, 320.5656, 0, 4.11129)
+
+[node name="Sketchfab_Scene19" parent="piso" instance=ExtResource("1_8cf8t")]
+transform = Transform3D(3.131897, 0, 0, 0, 1, 0, 0, 0, 2.6109176, 350.47116, 0, 4.11129)
+
+[node name="Sketchfab_Scene20" parent="piso" instance=ExtResource("1_8cf8t")]
+transform = Transform3D(3.131897, 0, 0, 0, 1, 0, 0, 0, 2.6109176, 380.60333, 0, 4.11129)
+
+[node name="AnimatedSprite3D9" type="AnimatedSprite3D" parent="piso"]
+transform = Transform3D(-3.25438, 0, -8.7422784e-08, 0, 3.6383033, 0, 2.8450694e-07, 0, -1.0000001, 283.98273, 18.804201, -9.743973)
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_y820p")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="piso/AnimatedSprite3D9"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="piso/AnimatedSprite3D9/StaticBody3D"]
+transform = Transform3D(0.9999998, 0, 2.6077034e-08, 0, 0.9999628, 0, -7.4500974e-09, 0, 1, 0.5550003, -0.44281673, 1.4990559)
+shape = SubResource("BoxShape3D_cdlmy")
+
+[node name="Paredes" type="Node3D" parent="."]
+
+[node name="AnimatedSprite3D2" type="AnimatedSprite3D" parent="Paredes"]
+transform = Transform3D(-0.065345705, 0, 0.9997318, 0, 3.318353, 0, -2.8209257, 0, -0.023158401, -176.68071, 15.448086, 13.923391)
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_go2ej")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Paredes/AnimatedSprite3D2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Paredes/AnimatedSprite3D2/StaticBody3D"]
+transform = Transform3D(0.9999999, 0, 2.6077032e-08, 0, 0.9999623, 0, -7.450581e-09, 0, 1, 0.555002, 0.14261055, 1.499054)
+shape = SubResource("BoxShape3D_cdlmy")
+
+[node name="AnimatedSprite3D3" type="AnimatedSprite3D" parent="Paredes"]
+transform = Transform3D(-3.25438, 0, -8.7422784e-08, 0, 3.6383033, 0, 2.8450694e-07, 0, -1.0000001, -175.94543, 11.453726, -37.55607)
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_y820p")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Paredes/AnimatedSprite3D3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Paredes/AnimatedSprite3D3/StaticBody3D"]
+transform = Transform3D(0.9999998, 0, 2.6077034e-08, 0, 0.9999628, 0, -7.4500974e-09, 0, 1, 0.5550003, -0.44281673, 1.4990559)
+shape = SubResource("BoxShape3D_cdlmy")
+
+[node name="AnimatedSprite3D4" type="AnimatedSprite3D" parent="Paredes"]
+transform = Transform3D(-4.0848713, 0, -8.7422784e-08, 0, 5.7088456, 0, 3.5711082e-07, 0, -1.0000001, -109.41728, -0.17747307, -30.705982)
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_vt716")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Paredes/AnimatedSprite3D4"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Paredes/AnimatedSprite3D4/StaticBody3D"]
+transform = Transform3D(0.9999998, 0, 2.6077034e-08, 0, 0.9999628, 0, -7.4500974e-09, 0, 1, 0.5550003, -0.44281673, 1.4990559)
+shape = SubResource("BoxShape3D_cdlmy")
+
+[node name="AnimatedSprite3D5" type="AnimatedSprite3D" parent="Paredes"]
+transform = Transform3D(-4.0848713, 0, -8.7422784e-08, 0, 5.7088456, 0, 3.5711082e-07, 0, -1.0000001, -0.6081848, 22.759119, -9.743973)
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_f0sfi")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Paredes/AnimatedSprite3D5"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Paredes/AnimatedSprite3D5/StaticBody3D"]
+transform = Transform3D(0.9999998, 0, 2.6077034e-08, 0, 0.9999628, 0, -7.4500974e-09, 0, 1, 0.5550003, -0.44281673, 1.4990559)
+shape = SubResource("BoxShape3D_cdlmy")
+
+[node name="AnimatedSprite3D6" type="AnimatedSprite3D" parent="Paredes"]
+transform = Transform3D(4.0848713, 0, -1.7484557e-07, 0, 4.487666, 0, 7.142216e-07, 0, 1.0000001, 76.89586, 19.99706, -9.743973)
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_dtvix")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Paredes/AnimatedSprite3D6"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Paredes/AnimatedSprite3D6/StaticBody3D"]
+transform = Transform3D(0.9999998, 0, 2.6077034e-08, 0, 0.9999628, 0, -7.4500974e-09, 0, 1, 0.5550003, -0.44281673, 1.4990559)
+shape = SubResource("BoxShape3D_cdlmy")
+
+[node name="AnimatedSprite3D7" type="AnimatedSprite3D" parent="Paredes"]
+transform = Transform3D(-4.0848713, 0, -8.7422784e-08, 0, 5.7088456, 0, 3.5711082e-07, 0, -1.0000001, 153.35251, 22.759119, -9.743973)
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_oyr6q")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Paredes/AnimatedSprite3D7"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Paredes/AnimatedSprite3D7/StaticBody3D"]
+transform = Transform3D(0.9999998, 0, 2.6077034e-08, 0, 0.9999628, 0, -7.4500974e-09, 0, 1, 0.5550003, -0.44281673, 1.4990559)
+shape = SubResource("BoxShape3D_cdlmy")
+
+[node name="AnimatedSprite3D8" type="AnimatedSprite3D" parent="Paredes"]
+transform = Transform3D(-4.0848713, 0, -8.7422784e-08, 0, 5.7088456, 0, 3.5711082e-07, 0, -1.0000001, 153.35251, 22.759119, -9.743973)
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_oyr6q")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Paredes/AnimatedSprite3D8"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Paredes/AnimatedSprite3D8/StaticBody3D"]
+transform = Transform3D(0.9999998, 0, 2.6077034e-08, 0, 0.9999628, 0, -7.4500974e-09, 0, 1, 0.5550003, -0.44281673, 1.4990559)
+shape = SubResource("BoxShape3D_cdlmy")
+
+[node name="AnimatedSprite3D9" type="AnimatedSprite3D" parent="Paredes"]
+transform = Transform3D(-3.25438, 0, -8.7422784e-08, 0, 3.6383033, 0, 2.8450694e-07, 0, -1.0000001, 223.11372, 18.804201, -9.743973)
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_y820p")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Paredes/AnimatedSprite3D9"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Paredes/AnimatedSprite3D9/StaticBody3D"]
+transform = Transform3D(0.9999998, 0, 2.6077034e-08, 0, 0.9999628, 0, -7.4500974e-09, 0, 1, 0.5550003, -0.44281673, 1.4990559)
+shape = SubResource("BoxShape3D_cdlmy")
+
+[node name="AnimatedSprite3D10" type="AnimatedSprite3D" parent="Paredes"]
+transform = Transform3D(-3.25438, 0, -8.7422784e-08, 0, 3.6383033, 0, 2.8450694e-07, 0, -1.0000001, 283.98273, 18.804201, -9.743973)
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_y820p")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Paredes/AnimatedSprite3D10"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Paredes/AnimatedSprite3D10/StaticBody3D"]
+transform = Transform3D(0.9999998, 0, 2.6077034e-08, 0, 0.9999628, 0, -7.4500974e-09, 0, 1, 0.5550003, -0.44281673, 1.4990559)
+shape = SubResource("BoxShape3D_cdlmy")
+
+[node name="AnimatedSprite3D11" type="AnimatedSprite3D" parent="Paredes"]
+transform = Transform3D(-4.0848713, 0, -8.7422784e-08, 0, 5.7088456, 0, 3.5711082e-07, 0, -1.0000001, 352.6684, 22.759119, -9.743973)
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_vt716")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Paredes/AnimatedSprite3D11"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Paredes/AnimatedSprite3D11/StaticBody3D"]
+transform = Transform3D(0.9999998, 0, 2.6077034e-08, 0, 0.9999628, 0, -7.4500974e-09, 0, 1, 0.5550003, -0.44281673, 1.4990559)
+shape = SubResource("BoxShape3D_cdlmy")
+
+[node name="AnimatedSprite3D12" type="AnimatedSprite3D" parent="Paredes"]
+transform = Transform3D(2.8216822, 0, 0, 0, 3.3183525, 0, 0, 0, 0.99999994, -101.18486, -1.0752106, -10.787062)
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_go2ej")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Paredes/AnimatedSprite3D12"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Paredes/AnimatedSprite3D12/StaticBody3D"]
+transform = Transform3D(0.9999999, 0, 2.6077032e-08, 0, 0.9999623, 0, -7.450581e-09, 0, 1, 0.555002, 0.14261055, 1.499054)
+shape = SubResource("BoxShape3D_cdlmy")
+
+[node name="AnimatedSprite3D13" type="AnimatedSprite3D" parent="Paredes"]
+transform = Transform3D(-4.0848713, 0, -8.7422784e-08, 0, 5.7088456, 0, 3.5711082e-07, 0, -1.0000001, -57.435898, 0.5371189, -62.96202)
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_f0sfi")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Paredes/AnimatedSprite3D13"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Paredes/AnimatedSprite3D13/StaticBody3D"]
+transform = Transform3D(0.9999998, 0, 2.6077034e-08, 0, 0.9999628, 0, -7.4500974e-09, 0, 1, 0.5550003, -0.44281673, 1.4990559)
+shape = SubResource("BoxShape3D_cdlmy")
+
+[node name="AnimatedSprite3D14" type="AnimatedSprite3D" parent="Paredes"]
+transform = Transform3D(2.8216822, 0, 0, 0, 3.3183525, 0, 0, 0, 0.99999994, -52.746212, 8.289818, -10.787062)
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_go2ej")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Paredes/AnimatedSprite3D14"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Paredes/AnimatedSprite3D14/StaticBody3D"]
+transform = Transform3D(0.9999999, 0, 2.6077032e-08, 0, 0.9999623, 0, -7.450581e-09, 0, 1, 0.555002, 0.14261055, 1.499054)
+shape = SubResource("BoxShape3D_cdlmy")
+
+[node name="AnimatedSprite3D15" type="AnimatedSprite3D" parent="Paredes"]
+transform = Transform3D(2.8216822, 0, 0, 0, 3.3183525, 0, 0, 0, 0.99999994, -150.72963, -1.0752106, -10.787062)
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_go2ej")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Paredes/AnimatedSprite3D15"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Paredes/AnimatedSprite3D15/StaticBody3D"]
+transform = Transform3D(0.9999999, 0, 2.6077032e-08, 0, 0.9999623, 0, -7.450581e-09, 0, 1, 0.555002, 0.14261055, 1.499054)
+shape = SubResource("BoxShape3D_cdlmy")
+
+[node name="cinta" parent="." instance=ExtResource("8_3gfj7")]
+transform = Transform3D(0.85770875, 0, 0, 0, 1, 0, 0, 0, 0.53820795, 92.22262, 0.3705387, 3.4734764)
+
+[node name="Sketchfab_Scene" parent="." instance=ExtResource("9_vt716")]
+transform = Transform3D(0.87925583, 0, -6.2343693, 0, 6.059593, 0, 5.481414, 0, 1.0000352, -112.4982, -19.769873, -60.955082)
+
+[node name="Label3D" type="Label3D" parent="."]
+transform = Transform3D(21.765617, 0, 0.24856675, 0, 22.993464, 0, -3.50655, 0, 1.5428864, -128.46693, 38.991272, -55.247356)
+modulate = Color(0.9135675, 0.35446224, 0.10394629, 1)
+outline_modulate = Color(0.36424398, 0.024449388, 0.31614468, 1)
+text = "Movimientos:
+A - Izquierda
+D - Derecha"
+font = SubResource("FontVariation_vt716")
+font_size = 36
+outline_size = 20
+language = "en_US"
+
+[node name="AnimatedSprite3D15" type="AnimatedSprite3D" parent="."]
+transform = Transform3D(2.8536863, 0, 0.118194446, 0, 2.7501884, 0, -0.3389177, 0, 0.995197, -97.27693, 39.66539, -59.103912)
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_gc3mq")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="AnimatedSprite3D15"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="AnimatedSprite3D15/StaticBody3D"]
+transform = Transform3D(0.9999999, 0, 2.6077032e-08, 0, 0.9999623, 0, -7.450581e-09, 0, 1, 0.555002, 0.14261055, 1.499054)
+shape = SubResource("BoxShape3D_cdlmy")
