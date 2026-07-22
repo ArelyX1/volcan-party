@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cst8b55kxx7rt"
+path="res://.godot/imported/Soundtrack 1..wav-019f7ba8d8741d24e524b7ae91d41693.sample"
+
+[deps]
+
+source_file="res://minigames/osugame/Sounds/Soundtrack 1..wav"
+dest_files=["res://.godot/imported/Soundtrack 1..wav-019f7ba8d8741d24e524b7ae91d41693.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

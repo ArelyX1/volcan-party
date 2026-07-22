@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://cm2qmoked1b34" path="res://model3d/pavimento_pompeya_op.glb" id="3_gipix"]
 [ext_resource type="PackedScene" uid="uid://bvc5tc08ciyq6" path="res://model3d/portalYana.glb" id="4_mci54"]
 [ext_resource type="PackedScene" uid="uid://52icdsngn5dq" path="res://model3d/Semaforo.glb" id="5_gipix"]
+[ext_resource type="PackedScene" uid="uid://bed7tk770edkm" path="res://model3d/park_bench.glb" id="6_hsiv4"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_gipix"]
 size = Vector3(805.30554, 1, 581.3725)
@@ -77,6 +78,24 @@ transform = Transform3D(5.7663403, 0, 0, 0, 1, 0, 0, 0, 23.976025, -129.99649, 9
 [node name="Sketchfab_Scene2" parent="MeshInstance3D4" unique_id=1807181963 instance=ExtResource("3_gipix")]
 transform = Transform3D(5.7663403, 0, 0, 0, 1, 0, 0, 0, 23.976025, -129.99649, 9.231157, -138.93857)
 
+[node name="Sketchfab_Scene3" parent="MeshInstance3D4" unique_id=557323297 instance=ExtResource("3_gipix")]
+transform = Transform3D(5.7663403, 0, 0, 0, 1, 0, 0, 0, 4.0638747, 33.902817, 0.81975365, -139.35156)
+
+[node name="Sketchfab_Scene4" parent="MeshInstance3D4" unique_id=1400941821 instance=ExtResource("3_gipix")]
+transform = Transform3D(5.7663403, 0, 0, 0, 1, 0, 0, 0, 4.9791083, 30.234032, 0.81975365, -192.97661)
+
+[node name="Sketchfab_Scene5" parent="MeshInstance3D4" unique_id=375160570 instance=ExtResource("3_gipix")]
+transform = Transform3D(5.7663403, 0, 0, 0, 1, 0, 0, 0, 4.0638747, -22.952585, 0.81975365, -139.35156)
+
+[node name="Sketchfab_Scene6" parent="MeshInstance3D4" unique_id=1061295658 instance=ExtResource("3_gipix")]
+transform = Transform3D(5.7663403, 0, 0, 0, 1, 0, 0, 0, 4.0638747, -22.952585, 0.81975365, -184.85672)
+
+[node name="Sketchfab_Scene7" parent="MeshInstance3D4" unique_id=286171078 instance=ExtResource("3_gipix")]
+transform = Transform3D(5.7663403, 0, 0, 0, 1, 0, 0, 0, 4.0638747, -81.985085, 0.81975365, -139.35156)
+
+[node name="Sketchfab_Scene8" parent="MeshInstance3D4" unique_id=2054056593 instance=ExtResource("3_gipix")]
+transform = Transform3D(5.7663403, 0, 0, 0, 1, 0, 0, 0, 4.0638747, -82.67265, 0.81975365, -184.71373)
+
 [node name="MeshInstance3D5" type="MeshInstance3D" parent="." unique_id=1345894240]
 
 [node name="portalYana" parent="MeshInstance3D5" unique_id=299510232 instance=ExtResource("4_mci54")]
@@ -102,3 +121,15 @@ transform = Transform3D(1.0255704, 0, -0.81714314, 0, 1.2921687, 0, 0.47703335, 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=738500781]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 73.81163, 0, 44.424736)
 shape = SubResource("BoxShape3D_gipix")
+
+[node name="Sketchfab_Scene" parent="." unique_id=1229111449 instance=ExtResource("6_hsiv4")]
+transform = Transform3D(-0.25697958, 0, 20.901745, 0, 18.149044, 0, -14.319548, 0, -0.37510404, 0, 0, -54.213642)
+
+[node name="Sketchfab_Scene2" parent="." unique_id=311170538 instance=ExtResource("6_hsiv4")]
+transform = Transform3D(-0.25697958, 0, 20.901745, 0, 18.149044, 0, -14.319548, 0, -0.37510404, 0, 0, -95.3327)
+
+[node name="Sketchfab_Scene3" parent="." unique_id=2020455361 instance=ExtResource("6_hsiv4")]
+transform = Transform3D(-0.25697958, 0, 20.901745, 0, 18.149044, 0, -14.319548, 0, -0.37510404, 0, 0, 53.77834)
+
+[node name="Sketchfab_Scene4" parent="." unique_id=1437341549 instance=ExtResource("6_hsiv4")]
+transform = Transform3D(-0.25697958, 0, 20.901745, 0, 18.149044, 0, -14.319548, 0, -0.37510404, 0, 0, 103.29735)

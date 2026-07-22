@@ -12,7 +12,7 @@
 size = Vector3(0.99952346, 27.04628, 31.636292)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_0q7fg"]
-size = Vector3(1, 1, 0.9273071)
+size = Vector3(1, 1, 0.79470825)
 
 [node name="Node3D" type="Node3D" unique_id=1131699580]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.073641, 0)
@@ -45,11 +45,11 @@ shape = SubResource("BoxShape3D_jwwyr")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 702.12134, 0, 0)
 
 [node name="Area3D2" type="Area3D" parent="." unique_id=1601160005]
-transform = Transform3D(19.547009, 0, 0, 0, 13.745663, 0, 0, 0, 19.669535, 180.53052, 11.603149, 0)
+transform = Transform3D(19.547009, 0, 0, 0, 13.745663, 0, 0, 0, 19.669535, 72.18176, 11.603149, 0)
 script = ExtResource("6_jwwyr")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D2" unique_id=1762027421]
-transform = Transform3D(1, 0, 0, 0, 1.0000002, 0, 0, 0, 1, -1.1913671, 0, 0.08711679)
+transform = Transform3D(1, 0, 0, 0, 1.0000002, 0, 0, 0, 1, -1.7313414, 0.072259784, 0.33951005)
 shape = SubResource("BoxShape3D_0q7fg")
 
 [node name="OsuMinigame" parent="." unique_id=883087989 instance=ExtResource("7_4omof")]

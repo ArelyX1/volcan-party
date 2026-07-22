@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://b0fpcdpsclk6p"]
+
+[ext_resource type="PackedScene" path="res://minigames/osugame/Scenes/ArrowButton.tscn" id="1"]
+[ext_resource type="SpriteFrames" path="res://minigames/osugame/Frames/arrow_left_frames.tres" id="2"]
+[ext_resource type="SpriteFrames" path="res://minigames/osugame/Frames/arrow_right_frames.tres" id="3"]
+[ext_resource type="Texture2D" uid="uid://pbv1je4oooat" path="res://minigames/osugame/Sprites/game/road/road.png" id="4"]
+[ext_resource type="SpriteFrames" path="res://minigames/osugame/Frames/arrow_up_frames.tres" id="4_lmpo6"]
+[ext_resource type="AudioStream" uid="uid://d3vt5guu5j1ym" path="res://minigames/osugame/Sounds/song.ogg" id="5"]
+[ext_resource type="Script" uid="uid://is4mblr2dahw" path="res://minigames/osugame/Scripts/Game.gd" id="6"]
+[ext_resource type="PackedScene" path="res://minigames/osugame/Scenes/Conductor.tscn" id="8"]
+
+[node name="Game" type="Node2D" unique_id=1906043318]
+position = Vector2(135, 45)
+scale = Vector2(1.9769685, 1.747)
+script = ExtResource("6")
+
+[node name="road" type="Sprite2D" parent="." unique_id=801672324]
+position = Vector2(100, 0)
+texture = ExtResource("4")
+centered = false
+
+[node name="ArrowUp" parent="." unique_id=1108982662 instance=ExtResource("1")]
+position = Vector2(160, 164)
+sprite_frames = ExtResource("4_lmpo6")
+input = "UP"
+
+[node name="ArrowLeft" parent="." unique_id=1922262954 instance=ExtResource("1")]
+position = Vector2(120, 164)
+sprite_frames = ExtResource("2")
+input = "LEFT"
+
+[node name="ArrowButton" parent="." unique_id=1588303467 instance=ExtResource("1")]
+position = Vector2(200, 164)
+sprite_frames = ExtResource("3")
+input = "RIGHT"
+
+[node name="Label" type="Label" parent="." unique_id=2062974188]
+scale = Vector2(0.5384305, 0.3853242)
+theme_override_font_sizes/font_size = 60
+text = "0"
+metadata/_edit_use_anchors_ = true
+
+[node name="Combo" type="Label" parent="." unique_id=1191295095]
+offset_left = 30.855324
+offset_right = 31.855324
+offset_bottom = 69.0
+theme_override_font_sizes/font_size = 12
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Conductor" parent="." unique_id=1918617541 instance=ExtResource("8")]
+stream = ExtResource("5")
+volume_db = -15.0
+bpm = 230
+
+[connection signal="beat" from="Conductor" to="." method="_on_Conductor_beat"]
+[connection signal="measure_hit" from="Conductor" to="." method="_on_Conductor_measure"]

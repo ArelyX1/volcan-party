@@ -1,24 +1,16 @@
 [gd_scene format=3 uid="uid://ch8125mru8t3y"]
 
 [ext_resource type="Script" uid="uid://bxcmcjmdo6wr2" path="res://minigames/osugame/osu_minigame.gd" id="1_qovne"]
+[ext_resource type="PackedScene" uid="uid://b0fpcdpsclk6p" path="res://minigames/osugame/Scenes/Game.tscn" id="2_d0nha"]
 
 [node name="OsuMinigame" type="CanvasLayer" unique_id=883087989]
 script = ExtResource("1_qovne")
-
-[node name="Label" type="Label" parent="." unique_id=1807275693]
-offset_left = 30.0
-offset_top = 20.0
-offset_right = 157.0
-offset_bottom = 81.0
-offset_transform_position = Vector2(0.08, 13.395)
-offset_transform_scale = Vector2(2.66, 2.66)
-theme_override_font_sizes/font_size = 30
-text = "REACT!!"
-horizontal_alignment = 1
-visible_characters_behavior = 2
 
 [node name="Panel" type="Panel" parent="." unique_id=584637385]
 offset_left = 215.0
 offset_top = 67.0
 offset_right = 921.0
 offset_bottom = 532.0
+
+[node name="Game" parent="Panel" unique_id=2108443601 instance=ExtResource("2_d0nha")]
+position = Vector2(51.000004, 73)
